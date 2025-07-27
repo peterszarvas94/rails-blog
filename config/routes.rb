@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get "about/index"
+  get "profile/index"
+  get "dashboard/index"
   resource :session
   resources :passwords, param: :token
-  resources :posts do
+  get "/posts", to: redirect("/")
+  resources :posts, except: [ :index ] do
     resources :comments
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

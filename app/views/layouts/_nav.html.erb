@@ -1,5 +1,7 @@
 <nav class="flex items-center gap-2">
-  <%= nav_link "Dashboard", "/dashboard/index" %>
-  <%= nav_link "Profile", "/profile/index" %>
+  <% if authenticated? %>
+    <%= nav_link "Dashboard", "/dashboard/index" %>
+    <%= nav_link "Profile", "/profile/index" %>
+  <% end %>
   <%= nav_link "About", "/about/index" %>
 </nav>

@@ -3,11 +3,19 @@ require "test_helper"
 class PostsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @post = posts(:one)
+    @user = users(:one)
+    sign_in_as(@user)
   end
 
   test "should get index" do
     get posts_url
-    assert_response :success
+    assert_redirected_to root_url
+  end
+
+  test "should redirect to login when not authenticated" do
+    delete session_url # Sign out
+    get root_url
+    assert_redirected_to new_session_url
   end
 
   test "should get new" do

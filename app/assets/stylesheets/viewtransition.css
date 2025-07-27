@@ -2,16 +2,10 @@
   navigation: auto;
 }
 
+/* Disable default page transition animation */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation: fade 0.1s ease both;
+  animation: none;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* Keep post element transitions - they use view-transition-name: post-{id} */

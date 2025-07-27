@@ -2,12 +2,12 @@
 service: blog
 
 # Name of the container image.
-image: peterszarvas94/blog
+image: peterszarvas94/pengoe
 
 # Deploy to these servers.
 servers:
   web:
-    - app.pengoe.hu
+    - pengoe.hu
     # job:
     #   hosts:
     #     - 192.168.0.1
@@ -19,7 +19,7 @@ servers:
     # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
 proxy:
   ssl: true
-  host: app.pengoe.hu
+  host: pengoe.hu
 
   # Credentials for your image host.
 registry:

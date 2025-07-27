@@ -7,7 +7,7 @@ image: peterszarvas94/pengoe
 # Deploy to these servers.
 servers:
   web:
-    - pengoe.hu
+    - 172.104.240.162
     # job:
     #   hosts:
     #     - 192.168.0.1
@@ -78,7 +78,7 @@ builder:
   arch: amd64
 
   # # Build image via remote server (useful for faster amd64 builds on arm64 computers)
-  remote: ssh://peti@builder.pengoe.hu
+  remote: ssh://peti@172.105.78.22
   local: false
 
   # # Pass arguments and secrets to the Docker build process

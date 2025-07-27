@@ -1,6 +1,9 @@
-<div id="<%= dom_id post %>" class="space-y-4" style="view-transition-name: post-<%= post.id %>">
+<div id="<%= dom_id post %>" class="space-y-4">
   <div>
-    <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+    <h2
+      class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+      style="view-transition-name: post-<%= post.id %>"
+    >
       <%= post.title %>
     </h2>
   </div>
@@ -11,6 +14,9 @@
     <span class="font-medium">Updated at:</span>
     <%# https://www.npmjs.com/package/local-time %>
     <%# https://strftime.org/ %>
-    <%= time_tag post.updated_at, "data-local": "time", "data-format": "%B %e, %Y %l:%M:%P", class: "ml-1" %>
+    <%= time_tag post.updated_at,
+    "data-local": "time",
+    "data-format": "%B %e, %Y %l:%M:%P",
+    class: "ml-1" %>
   </div>
 </div>

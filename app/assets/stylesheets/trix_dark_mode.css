@@ -1,0 +1,7 @@
+/* Dark mode styles for Trix editor */
+@media (prefers-color-scheme: dark) {
+  trix-toolbar .trix-button-group button,
+  trix-toolbar .trix-button-group input[type=button] {
+    filter: invert(1);
+  }
+}

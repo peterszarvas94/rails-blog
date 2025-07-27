@@ -1,13 +1,13 @@
 <div id="<%= dom_id post %>" class="space-y-4">
   <div>
-    <h2 class="text-xl font-semibold text-gray-800">
+    <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
       <%= post.title %>
     </h2>
   </div>
-  <div class="text-gray-600">
+  <div class="text-gray-600 dark:text-gray-300">
     <%= post.body %>
   </div>
-  <div class="text-sm text-gray-500">
+  <div class="text-sm text-gray-500 dark:text-gray-400">
     <span class="font-medium">Updated at:</span>
     <%# https://www.npmjs.com/package/local-time %>
     <%# https://strftime.org/ %>

@@ -13,6 +13,11 @@ This document outlines the guidelines for agentic coding in this repository.
 
 This project adheres to the [rubocop-rails-omakase](https://github.com/rails/rubocop-rails-omakase) style guide for Ruby code. Refer to the `.rubocop.yml` file for any project-specific overrides.
 
+## Agent Behavior Rules
+
+1. **Code Changes**: Do not change code until confirmed by the user
+2. **Long Answers**: Write detailed explanations into ANSWER.md, overwriting previous content
+
 ## Cursor/Copilot Rules
 
 No specific Cursor or Copilot rule files were found in this repository.

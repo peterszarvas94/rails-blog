@@ -4,7 +4,7 @@
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation: fade 0.3s ease both;
+  animation: fade 0.1s ease both;
 }
 
 @keyframes fade {

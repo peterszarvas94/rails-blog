@@ -1,6 +1,6 @@
-<div id="<%= dom_id post %>" class="space-y-4">
+<div id="<%= dom_id post %>" class="space-y-4" style="view-transition-name: post-<%= post.id %>">
   <div>
-    <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200" style="view-transition-name: post-title-<%= post.id %>">
+    <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
       <%= post.title %>
     </h2>
   </div>
